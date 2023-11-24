@@ -11,7 +11,7 @@ You can install the Check-FunctionFlow from [PyPI](https://pypi.org/project/Chec
 
 ## How to use
 The code snippet below shows how the Verifier class should be sub-classed in order to define the required pattern to be checked against the usage of the user
-
+```python
     from FunctionFlow import Verifier
 
     class Verifier_Withorder(Verifier):
@@ -46,4 +46,5 @@ The code snippet below shows how the Verifier class should be sub-classed in ord
         
         print(test_sum(2,4))
         print(test_diff(2,4))
+```
 

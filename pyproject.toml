@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Check-FunctionFlow"
-version = "1.0.0"
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
 description = "Sanity check of function call orders"
 readme = "README.md"
 authors = [{ name = "Mahdi Tanbakuchi", email = "mehdi.kuchi@gmail.com" }]

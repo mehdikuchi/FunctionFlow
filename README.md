@@ -10,7 +10,7 @@ You can install the Check-FunctionFlow from [PyPI](https://pypi.org/project/Chec
     python -m pip install Check-FunctionFlow
 
 ## How to use
-The code snippet below shows how the Verifier class sould be subclassed in order to define the required pattern to be checked against the usage of the user
+The code snippet below shows how the Verifier class should be sub-classed in order to define the required pattern to be checked against the usage of the user
 
     from FunctionFlow import Verifier
 

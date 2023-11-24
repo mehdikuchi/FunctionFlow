@@ -17,17 +17,36 @@ classifiers = [
 keywords = ["Function", "Check", "Verify"]
 requires-python = ">=3.5"
 
-[tool.bumpver]
-current_version = "1.0.0"
-version_pattern = "MAJOR.MINOR.PATCH"
-commit_message  = "Bump version {old_version} -> {new_version}"
-commit          = true
-tag             = true
-push            = false
 
-[tool.bumpver.file_patterns]
-"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
-"src/FunctionFlow/__init__.py" = ["{version}"]
 
 [project.urls]
 Homepage = "https://github.com/mehdikuchi/FunctionFlow"
+
+
+
+
+
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"src/FunctionFlow/__init__.py" = ["{version}"]
+
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+

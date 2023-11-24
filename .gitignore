@@ -8,3 +8,5 @@ src/Check_FunctionFlow.egg-info/top_level.txt
 src/Check_FunctionFlow.egg-info/PKG-INFO
 src/Check_FunctionFlow.egg-info/SOURCES.txt
 src/Check_FunctionFlow.egg-info/dependency_links.txt
+dist/Check_FunctionFlow-1.0.0-py3-none-any.whl
+dist/Check-FunctionFlow-1.0.0.tar.gz

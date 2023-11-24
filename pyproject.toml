@@ -40,9 +40,7 @@ tag = true
 push = true
 
 [tool.bumpver.file_patterns]
-"pyproject.toml" = [
-    'current_version = "{version}"',
-]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
 "src/FunctionFlow/__init__.py" = ["{version}"]
 
 "README.md" = [

@@ -1,5 +1,5 @@
 # Check-FunctionFlow
-The library is intetneded for developer who would like to apply some sort of validity check over the order of their function calls.
+The library is designed for developers who want to implement a validity check on the order of their function calls.
 
 
 

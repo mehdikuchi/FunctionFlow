@@ -4,8 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Check-FunctionFlow"
-current_version = "1.0.0"
-version_pattern = "MAJOR.MINOR.PATCH"
+version = "1.0.1"
 description = "Sanity check of function call orders"
 readme = "README.md"
 authors = [{ name = "Mahdi Tanbakuchi", email = "mehdi.kuchi@gmail.com" }]
@@ -29,7 +28,7 @@ Homepage = "https://github.com/mehdikuchi/FunctionFlow"
 
 
 [tool.bumpver]
-current_version = "1.0.0"
+current_version = "1.0.1"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"

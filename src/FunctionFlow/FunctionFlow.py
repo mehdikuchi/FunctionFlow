@@ -1,15 +1,15 @@
 class wrapper(object):
-    def __init__(self, func) -> None:
-        self.func = func
+    def __init__(self, fun) -> None:
+        self.fun = fun
         self.data = []
-        self.name = func.__name__
+        self.name = fun.__name__
 
     def manage_args(self, *args, **kwargs):
         pass
 
     def __call__(self, *args, **kwargs):
         self.manage_args(*args, **kwargs)
-        return self.func(*args)
+        return self.fun(*args)
 
 
 class Verifier(dict):
@@ -17,19 +17,19 @@ class Verifier(dict):
         super(Verifier, self).__init__()
         self.order = []
 
-    def addfunc(self, func):
-        self.update({func.__name__: wrapper(func)})
+    def addfun(self, fun):
+        self.update({fun.__name__: wrapper(fun)})
 
-        def wrapperfunc(*args, **kwargs):
-            if func.__name__ in self.order:
-                self.order.pop(self.order.index(func.__name__))
-                self.order.append(func.__name__)
+        def wrapperfun(*args, **kwargs):
+            if fun.__name__ in self.order:
+                self.order.pop(self.order.index(fun.__name__))
+                self.order.append(fun.__name__)
             else:
-                self.order.append(func.__name__)
+                self.order.append(fun.__name__)
 
             self.validity_check()
-            return self[func.__name__](*args, **kwargs)
-        return wrapperfunc
+            return self[fun.__name__](*args, **kwargs)
+        return wrapperfun
 
     def validity_check(self):
         pass
